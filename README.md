@@ -37,7 +37,6 @@ Antes de executar este projeto, certifique-se de ter o seguinte instalado:
 1. **Clone o repositório**
    ```bash
    git clone <url-do-repositório>
-   cd projectFinalM3/rn-qrcode
    ```
 
 2. **Instale as dependências**
