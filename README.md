@@ -1,20 +1,20 @@
-# QR Code Scanner
+# Leitor de QR Code
 
-A React Native application built with Expo for scanning QR codes using the device's camera.
+Um aplicativo React Native construído com Expo para escanear códigos QR usando a câmera do dispositivo.
 
-## Features
+## Funcionalidades
 
-- 📱 **Camera Integration**: Uses device camera to scan QR codes
-- 🔐 **Permission Handling**: Automatically requests camera permissions
-- 🎯 **QR Code Detection**: Real-time QR code scanning and detection
-- 🚫 **Duplicate Prevention**: Prevents multiple scans of the same QR code
-- 📱 **Cross Platform**: Works on both iOS and Android
+- 📱 **Integração com Câmera**: Usa a câmera do dispositivo para escanear códigos QR
+- 🔐 **Gerenciamento de Permissões**: Solicita automaticamente permissões da câmera
+- 🎯 **Detecção de QR Code**: Escaneamento e detecção de códigos QR em tempo real
+- 🚫 **Prevenção de Duplicatas**: Evita múltiplos escaneamentos do mesmo código QR
+- 📱 **Multiplataforma**: Funciona tanto no iOS quanto no Android
 
-## Screenshots
+## Capturas de Tela
 
-*Add screenshots of your app here*
+*Adicione capturas de tela do seu aplicativo aqui*
 
-## Tech Stack
+## Stack Tecnológica
 
 - **React Native**: 0.79.5
 - **Expo**: ~53.0.17
@@ -22,151 +22,151 @@ A React Native application built with Expo for scanning QR codes using the devic
 - **expo-camera**: ~16.1.10
 - **expo-status-bar**: ~2.2.3
 
-## Prerequisites
+## Pré-requisitos
 
-Before running this project, make sure you have the following installed:
+Antes de executar este projeto, certifique-se de ter o seguinte instalado:
 
-- [Node.js](https://nodejs.org/) (v16 or higher)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Node.js](https://nodejs.org/) (v16 ou superior)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
 - [Expo CLI](https://docs.expo.dev/get-started/installation/)
-- [Android Studio](https://developer.android.com/studio) (for Android development)
-- [Xcode](https://developer.apple.com/xcode/) (for iOS development, macOS only)
+- [Android Studio](https://developer.android.com/studio) (para desenvolvimento Android)
+- [Xcode](https://developer.apple.com/xcode/) (para desenvolvimento iOS, apenas macOS)
 
-## Installation
+## Instalação
 
-1. **Clone the repository**
+1. **Clone o repositório**
    ```bash
-   git clone <repository-url>
+   git clone <url-do-repositório>
    cd projectFinalM3/rn-qrcode
    ```
 
-2. **Install dependencies**
+2. **Instale as dependências**
    ```bash
    npm install
-   # or
+   # ou
    yarn install
    ```
 
-3. **Start the development server**
+3. **Inicie o servidor de desenvolvimento**
    ```bash
    npm start
-   # or
+   # ou
    yarn start
    ```
 
-## Running the App
+## Executando o Aplicativo
 
-### Development Mode
+### Modo de Desenvolvimento
 
 ```bash
-# Start Expo development server
+# Inicie o servidor de desenvolvimento do Expo
 npm start
 ```
 
-This will open the Expo DevTools in your browser. You can then:
-- Scan the QR code with the Expo Go app on your phone
-- Press `a` to run on Android emulator
-- Press `i` to run on iOS simulator
+Isso abrirá o Expo DevTools no seu navegador. Você pode então:
+- Escanear o código QR com o aplicativo Expo Go no seu telefone
+- Pressionar `a` para executar no emulador Android
+- Pressionar `i` para executar no simulador iOS
 
-### Platform Specific
+### Plataforma Específica
 
 ```bash
-# Run on Android
+# Executar no Android
 npm run android
 
-# Run on iOS (macOS only)
+# Executar no iOS (apenas macOS)
 npm run ios
 
-# Run on Web
+# Executar na Web
 npm run web
 ```
 
-## How to Use
+## Como Usar
 
-1. **Launch the app** on your device or emulator
-2. **Tap "ler QR Code"** button to open the camera
-3. **Grant camera permissions** when prompted
-4. **Point your camera** at a QR code
-5. **The app will automatically detect** and display the QR code content
-6. **Tap "Fechar"** to close the camera view
+1. **Inicie o aplicativo** no seu dispositivo ou emulador
+2. **Toque no botão "ler QR Code"** para abrir a câmera
+3. **Conceda permissões da câmera** quando solicitado
+4. **Aponte sua câmera** para um código QR
+5. **O aplicativo detectará automaticamente** e exibirá o conteúdo do código QR
+6. **Toque em "Fechar"** para fechar a visualização da câmera
 
-## Project Structure
+## Estrutura do Projeto
 
 ```
 rn-qrcode/
-├── App.tsx                 # Main application component
-├── package.json            # Dependencies and scripts
-├── tsconfig.json          # TypeScript configuration
-├── metro.config.js        # Metro bundler configuration
-├── app.json              # Expo configuration
-├── android/              # Android specific files
-├── ios/                  # iOS specific files
-└── index.js              # Entry point
+├── App.tsx                 # Componente principal do aplicativo
+├── package.json            # Dependências e scripts
+├── tsconfig.json          # Configuração do TypeScript
+├── metro.config.js        # Configuração do Metro bundler
+├── app.json              # Configuração do Expo
+├── android/              # Arquivos específicos do Android
+├── ios/                  # Arquivos específicos do iOS
+└── index.js              # Ponto de entrada
 ```
 
-## Key Components
+## Componentes Principais
 
 ### App.tsx
-- Main application component
-- Handles camera permissions
-- Manages QR code scanning functionality
-- Implements duplicate scan prevention
+- Componente principal do aplicativo
+- Gerencia permissões da câmera
+- Controla a funcionalidade de escaneamento de QR code
+- Implementa prevenção de escaneamentos duplicados
 
-### Features Implemented
-- **Camera Permission Management**: Uses `useCameraPermissions` hook
-- **QR Code Scanning**: Real-time barcode detection with `CameraView`
-- **Modal Interface**: Camera view opens in a modal
-- **Scan Lock**: Prevents multiple scans of the same QR code
-- **Error Handling**: Graceful error handling for permission denials
+### Funcionalidades Implementadas
+- **Gerenciamento de Permissões da Câmera**: Usa o hook `useCameraPermissions`
+- **Escaneamento de QR Code**: Detecção de código de barras em tempo real com `CameraView`
+- **Interface Modal**: A visualização da câmera abre em um modal
+- **Bloqueio de Escaneamento**: Previne múltiplos escaneamentos do mesmo código QR
+- **Tratamento de Erros**: Tratamento gracioso de erros para negações de permissão
 
-## Configuration
+## Configuração
 
-### Camera Permissions
-The app automatically requests camera permissions when the scan button is pressed. If permissions are denied, an alert is shown.
+### Permissões da Câmera
+O aplicativo solicita automaticamente permissões da câmera quando o botão de escaneamento é pressionado. Se as permissões forem negadas, um alerta é exibido.
 
-### QR Code Detection
-The app uses Expo Camera's `onBarcodeScanned` callback to detect QR codes in real-time.
+### Detecção de QR Code
+O aplicativo usa o callback `onBarcodeScanned` do Expo Camera para detectar códigos QR em tempo real.
 
-## Troubleshooting
+## Solução de Problemas
 
-### Common Issues
+### Problemas Comuns
 
-1. **Camera not working**
-   - Ensure camera permissions are granted
-   - Check if the device has a camera
-   - Restart the app if permissions were denied
+1. **Câmera não funcionando**
+   - Certifique-se de que as permissões da câmera foram concedidas
+   - Verifique se o dispositivo possui uma câmera
+   - Reinicie o aplicativo se as permissões foram negadas
 
-2. **Build errors**
-   - Clear Metro cache: `npx expo start --clear`
-   - Delete node_modules and reinstall: `rm -rf node_modules && npm install`
+2. **Erros de build**
+   - Limpe o cache do Metro: `npx expo start --clear`
+   - Delete node_modules e reinstale: `rm -rf node_modules && npm install`
 
-3. **iOS build issues**
-   - Ensure Xcode is properly installed
-   - Run `cd ios && pod install` if using CocoaPods
+3. **Problemas de build no iOS**
+   - Certifique-se de que o Xcode está instalado corretamente
+   - Execute `cd ios && pod install` se estiver usando CocoaPods
 
-4. **Android build issues**
-   - Ensure Android Studio and SDK are properly configured
-   - Check that ANDROID_HOME environment variable is set
+4. **Problemas de build no Android**
+   - Certifique-se de que o Android Studio e SDK estão configurados corretamente
+   - Verifique se a variável de ambiente ANDROID_HOME está definida
 
-## Contributing
+## Contribuindo
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. Faça um fork do repositório
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcionalidade`)
+3. Faça commit das suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Faça push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
 
-## License
+## Licença
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-## Support
+## Suporte
 
-If you encounter any issues or have questions, please:
-1. Check the troubleshooting section above
-2. Search existing issues in the repository
-3. Create a new issue with detailed information about your problem
+Se você encontrar algum problema ou tiver dúvidas, por favor:
+1. Verifique a seção de solução de problemas acima
+2. Pesquise issues existentes no repositório
+3. Crie uma nova issue com informações detalhadas sobre seu problema
 
 ---
 
-**Note**: This app requires camera access to function properly. Make sure to grant camera permissions when prompted. 
+**Nota**: Este aplicativo requer acesso à câmera para funcionar corretamente. Certifique-se de conceder permissões da câmera quando solicitado. 
